@@ -1,4 +1,19 @@
-- $var_test1 = 'je suis la variable test1 et je me sens global grace à mon $ ;)'
 tr
-  td align="center"
-    p layout(header) > index (yield) > ET VOILA MA PARIAL NON DE NON > _partial.slim
+  td align="left"
+    h1
+     | layout =
+    p header ( cf ==yield) 
+tr
+  td
+    h1 index
+    p réunion des fichiers html partiels + import des variables
+    hr/
+tr
+  td
+    h1 variable globale > $varname
+    ol
+      li déclaration cf index.slim
+      li =$var_test1
+      li
+        | utiliser le pipe pour saisir = sans générer d'érreur.
+      li =$var1+$var2+$var1+$var2
