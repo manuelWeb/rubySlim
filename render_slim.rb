@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-# require 'slim/include'
 require 'slim'
 # crea raccourci @ pour attr role
 Slim::Engine.set_options shortcut: {'@' => {attr: 'role'}, '#' => {attr: 'id'}, '.' => {attr: 'class'}}
@@ -18,8 +17,3 @@ get '/' do
 end
 
 __END__
-
-# @@_partial
-# tr
-#   td align="right"
-#     p ma _partial :)

@@ -1,12 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-head
-  meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/
-  title master file
-body
-  table width="100%"
-    tr
-      td
-        font header news in layout.slim
-    
-    == yield
+    head
+      meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/
+      title master file
+      style type="text/css"
+        | h1{ font-family:sans-serif;margin:0;font-size:14px;}
+        | p{margin:0;}
+    body
+      table width="100%"
+        tr
+          td
+            h1
+              | header news in layout.slim compilation = render_slim.rb
+              hr/
+        
+        == yield
